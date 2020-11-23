@@ -1,7 +1,7 @@
 #!/bin/bash
 set +x
 sudo apt-get install jq -y
-apt-get install docker-ce docker-ce-cli containerd.io -y
+sudo apt-get install docker-ce docker-ce-cli containerd.io -y
 sudo usermod -a -G docker ec2-user
 sudo systemctl  start docker
 sudo systemctl status docker
